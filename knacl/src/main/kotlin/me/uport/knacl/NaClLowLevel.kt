@@ -682,7 +682,7 @@ object NaClLowLevel {
             0x5b.toByte(), 0xe0.toByte(), 0xcd.toByte(), 0x19.toByte(), 0x13.toByte(), 0x7e.toByte(), 0x21.toByte(), 0x79.toByte()
     )
 
-    private fun crypto_hash(outArr: ByteArray, m: ByteArray, n: Long): Int {
+    fun crypto_hash(outArr: ByteArray, m: ByteArray, n: Long): Int {
         require(outArr.size >= 64) { "outArr size(${outArr.size}) needs to be at least 64" }
         val h = iv.copyOf()
         val x = ByteArray(256)
