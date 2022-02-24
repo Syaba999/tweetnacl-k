@@ -17,7 +17,7 @@ import kotlin.math.roundToLong
  * Use at your own risk.**
  */
 @Suppress("unused")
-internal object NaClLowLevel {
+object NaClLowLevel {
 
     private val _0: ByteArray = ByteArray(16) { 0 }
 
