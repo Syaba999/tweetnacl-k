@@ -750,7 +750,7 @@ object NaClLowLevel {
         }
     }
 
-    private fun pack(r: ByteArray, p: Array<LongArray>) {
+    fun pack(r: ByteArray, p: Array<LongArray>) {
         val tx = LongArray(16)
         val ty = LongArray(16)
         val zi = LongArray(16)
@@ -775,7 +775,7 @@ object NaClLowLevel {
         }
     }
 
-    private fun scalarbase(p: Array<LongArray>, s: ByteArray) {
+    fun scalarbase(p: Array<LongArray>, s: ByteArray) {
         val q = Array(4) { LongArray(16) }
         set25519(q[0], X)
         set25519(q[1], Y)
