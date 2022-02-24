@@ -16,7 +16,6 @@ import kotlin.math.roundToLong
  * This port is not complete and has not gone through a complete audit.
  * Use at your own risk.**
  */
-@Suppress("unused")
 object NaClLowLevel {
 
     private val _0: ByteArray = ByteArray(16) { 0 }
